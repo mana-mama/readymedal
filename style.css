@@ -337,17 +337,42 @@ header h2 {
     gap: 2rem;
 }
 
+.hidden-info .content .example-container {
+    overflow-x: hidden;
+    width: 36rem;
+    min-width: 36rem;
+}
+
 .hidden-info .content .pic-container {
-    position: relative;
-    display: flex;
     aspect-ratio: 1/1;
-    max-height: 45rem;
-    overflow-x: auto;
+    width: 100%;
 }
 
 .hidden-info .content .pic-container img {
-    max-height: 45rem;
+    display: none;
+    height: 100%;
     aspect-ratio: 1/1;
+}
+
+.hidden-info .content .example-container .small-pic-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.hidden-info .content .example-container .small-pic-nav img {
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+}
+
+.hidden-info .content .example-container .small-pic-nav img.active {
+    border: 3px solid var(--color_6);
+    z-index: 1;
+}
+
+.hidden-info .content .example-container .small-pic-nav img:hover {
+    cursor: pointer;
+    border: 3px solid var(--color_1);
+    z-index: 2;
 }
 
 .hidden-info .content p {
@@ -573,6 +598,14 @@ footer {
         font-size: 3rem;
     }
 
+    header {
+        align-items: end;
+    }
+
+    header h2 {
+        padding: 1.5rem;
+    }
+
     .hero {
         display: block;
     }
@@ -599,16 +632,46 @@ footer {
         display: block;
     }
 
-    .hidden-info .content .pic-container {
-        justify-content: start;
-        margin-inline: auto;
-        height: 30%;
-        overflow-x: auto;
+    .example-container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        overflow-x: visible;
+        margin-top: 2rem;
+        width: 90% !important;
+        min-width: 90% !important;
     }
-    
+
+    .hidden-info .content .pic-container {
+        width: 60%;
+    }
+
+    .example-container .small-pic-nav {
+        display: grid;
+        grid-template-columns: auto auto !important;
+    }
+
+    .example-container .small-pic-nav img {
+        width: 9rem !important;
+    }
+
     .hidden-info .content p {
         margin: 5rem;
         font-size: 2.7rem;
+    }
+
+    .customers h3 {
+        font-size: 5rem;
+    }
+    
+    .ctm-lists .ctm-row {
+        flex-direction: column;
+    }
+
+    .ctm-row a p {
+        font-size: 3rem;
+        text-align: center;
+        width: 60rem;
     }
 }
 
@@ -616,7 +679,6 @@ footer {
     .hidden-info .content .pic-container {
         max-height: 50rem;
     }
-
 }
 
 @media (max-width: 540px) {
@@ -627,6 +689,7 @@ footer {
     header {
         flex-direction: column;
         margin-top: 2rem;
+        align-items: center;
     }
 
     header .logo {
@@ -640,6 +703,7 @@ footer {
     header h2 {
         font-size: 4rem;
         margin-bottom: 2rem;
+        padding: 0rem;
     }
 
     .top-right-contact {
@@ -702,20 +766,6 @@ footer {
     
     .example .img-container img {
         height: 50rem;
-    }
-    
-    .customers h3 {
-        font-size: 5rem;
-    }
-    
-    .ctm-lists .ctm-row {
-        flex-direction: column;
-    }
-
-    .ctm-row a p {
-        font-size: 3rem;
-        text-align: center;
-        width: 60rem;
     }
 }
 
