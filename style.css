@@ -1,0 +1,732 @@
+:root {
+    font-size: 62.5%;
+    /* -moz-text-size-adjust: none; */
+    -moz-text-size-adjust: 100%;
+    /* -webkit-text-size-adjust: none; */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: none;
+    --color_1:#654062;
+    --color_2:#FFD66B;
+    --color_3:#F4F4F4;
+    --color_4:#FF9D72;
+    --color_6: #000;
+    --color_5: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Pridi";
+    src: url(Pridi-Regular.ttf);
+}
+
+html {
+    font-family: "Pridi";
+}
+
+body {
+    position: relative;
+
+    background-color: var(--color_5);
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right-contact {
+    position: fixed;
+    right: 10rem;
+    min-height: 6rem;
+    z-index: 10;
+
+    display: flex;
+}
+
+.top-right-contact .click {
+    font-size: 2rem;
+    max-height: 6rem;
+    line-height: 6rem;
+    padding-inline: 2rem;
+
+    color: var(--color_5);
+    background: var(--color_6);
+}
+
+.top-right-contact .short {
+    display: none;
+}
+
+.top-right-contact a {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-height: 6rem;
+
+    transition: 0.3s;
+}
+
+.top-right-contact a:hover {
+    height: 10rem;
+    max-height: 10rem;
+}
+
+.top-right-contact a img {
+    height: 4rem;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    margin: 1rem;
+}
+
+.top-right-contact .tele {
+    background: var(--color_2);
+}
+
+.top-right-contact .mail {
+    background: var(--color_3);
+}
+
+.top-right-contact .line {
+    background: var(--color_4   );
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-inline: 5rem;
+    border-bottom: 1px solid var(--color_6);
+}
+
+header .logo {
+    height: 15rem;
+}
+
+header .logo img {
+    height: 100%;
+    margin-left: 5rem;
+}
+
+header h2 {
+    font-size: 3rem;
+    color: var(--color_6);
+}
+
+.greet {
+    margin-inline: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--color_6);
+}
+
+.greet h1 {
+    font-size: 5rem;
+}
+
+.greet h2 {
+    font-size: 3rem;
+}
+
+.greet-line {
+    display: flex;
+    width: 61rem;
+}
+
+.greet-line .minicircle {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--color_6);
+    border-radius: 50%;
+    margin-right: 2rem;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.greet-line .gold {
+    background: var(--color_2);
+}
+
+.greet-line .silver {
+    background: var(--color_3);
+}
+
+.greet-line .bronze {
+    background: var(--color_4);
+}
+
+.greet-line .gray {
+    background: gray;
+}
+
+.hero {
+    margin-inline: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--color_6);
+
+    padding-inline: 10rem;
+}
+
+.hero .medal {
+    aspect-ratio: 1.5/1;
+    position: relative;
+}
+
+.hero .pic {
+    aspect-ratio: 1/1;
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    border: 0.5rem solid var(--color_5);
+
+    transition: 0.3s;
+}
+
+.hero .pic:hover {
+    width: 60%;
+    transform: translateX(-5%) translateY(-5%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.hero h2 {
+    position: absolute;
+    font-size: 5rem;
+    z-index: 2;
+    text-shadow: 1px 1px 10px var(--color_5);
+    color: var(--color_6);
+}
+
+.click-hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+.click-hint img {
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
+
+.click-hint p {
+    font-size: 2rem;
+    margin-inline: 1rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.modern h2,
+.square h2 {
+    top: 5%;
+    left: 10%;
+}
+
+.modern .one,
+.square .one {
+    top: 25%;
+    left: 10%;
+    z-index: 1;
+}
+
+.modern .two,
+.square .two {
+    top: 5%;
+    left: 40%;
+}
+
+.flat h2,
+.circle h2 {
+    top: 5%;
+    left: 20%;
+}
+
+.flat .one,
+.circle .one {
+    top: 5%;
+    left: 10%;
+    z-index: 1;
+}
+
+.flat .two,
+.circle .two {
+    top: 23%;
+    left: 40%;
+}
+
+.hidden-info {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+@keyframes showing {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.showing {
+    animation: showing;
+    animation-duration: 0.3s;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.fading {
+    animation: fading;
+    animation-duration: 0.3s;
+}
+
+.hidden-info .content {
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    /* background: var(--color_5); */
+}
+
+.hidden-info .content h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hidden-info .content .first-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hidden-info .content .pic-container {
+    position: relative;
+    display: flex;
+    aspect-ratio: 1/1;
+    max-height: 45rem;
+    overflow-x: auto;
+}
+
+.hidden-info .content .pic-container img {
+    max-height: 45rem;
+    aspect-ratio: 1/1;
+}
+
+.hidden-info .content p {
+    font-size: 1.8rem;
+}
+
+.hidden-info .content p span {
+    text-decoration: underline;
+}
+
+.hidden-info .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    background: var(--color_5);
+    opacity: 96%;
+}
+
+.hidden-info .close {
+    position: absolute;
+    color: var(--color_5);
+    padding: 1rem;
+    font-size: 2rem;
+    background: var(--color_6);
+    right: 0;
+    width: 10rem;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.hidden-info .close:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.example {
+    margin-top: 2rem;
+}
+
+.example h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color_6);
+}
+
+.example .img-container {
+    display: flex;
+    overflow-x: hidden;
+    width: auto;
+    margin-inline: 5rem;
+}
+
+.example .top {
+    border-top: 3px solid var(--color_6);
+    border-left: 3px solid var(--color_6);
+    border-right: 3px solid var(--color_6);
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.example .mid {
+    border-left: 3px solid var(--color_6);
+    border-right: 3px solid var(--color_6);
+}
+
+.example .bottom {
+    border-bottom: 3px solid var(--color_6);
+    border-left: 3px solid var(--color_6);
+    border-right: 3px solid var(--color_6);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.example .img-container img {
+    height: 35rem;
+}
+
+.customers {
+    margin-top: 2rem;
+    margin-inline: 5rem;
+}
+
+.customers h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ctm-lists .ctm-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--color_6);
+    border-right: 1px solid var(--color_6);
+}
+
+.ctm-row a p {
+    font-size: 2rem;
+    color: var(--color_6);
+    width: 30rem;
+    text-wrap: pretty;
+}
+
+.ctm-row a img {
+    height: 12rem;
+    padding: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.ctm-row a:hover {
+    text-decoration: underline;
+}
+
+.margin-foot {
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 20rem;
+    width: 100%;
+}
+
+.footer-container {
+    margin-inline: 5rem;
+    border-top: 1px solid var(--color_6);
+}
+
+.footer-container .information {
+    display: flex;
+    justify-content: center;
+}
+
+.information .logo {
+    height: 12rem;
+    margin: 2rem;
+}
+
+.information .logo img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.information .address {
+    font-size: 2rem;
+    margin: 2rem;
+    color: var(--color_6);
+}
+
+.information .address span {
+    text-decoration: underline;
+}
+
+.information .contact {
+    margin: 2rem;
+}
+
+.information .contact a {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color_6);
+    text-decoration: underline;
+}
+
+.information .contact a img {
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--color_6);
+}
+
+.footer-container .credit {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--color_6);
+    border-top: 1px solid var(--color_6);
+    height: 5rem;
+}
+
+@keyframes auto-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.auto-scroller {
+    display: flex;
+    animation: auto-scroll;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.reverse-scroller {
+    display: flex;
+    animation: auto-scroll;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 47%;
+    }
+
+    .click-hint p {
+        font-size: 3rem;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hidden-info .close {
+        height: 10rem;
+        bottom: 0;
+        width: 100%;
+        line-height: 10rem;
+        font-size: 4rem;
+    }
+
+    .hidden-info .content {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hidden-info .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .hidden-info .content .first-box {
+        display: block;
+    }
+
+    .hidden-info .content .pic-container {
+        justify-content: start;
+        margin-inline: auto;
+        height: 30%;
+        overflow-x: auto;
+    }
+    
+    .hidden-info .content p {
+        margin: 5rem;
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-info .content .pic-container {
+        max-height: 50rem;
+    }
+
+}
+
+@media (max-width: 540px) {
+    :root {
+        font-size: 32%;
+    }
+
+    header {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    header .logo {
+        height: 30rem;
+    }
+
+    header .logo img {
+        margin-left: 0;
+    }
+
+    header h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .top-right-contact {
+        top: 10rem;
+        right: 0rem;
+        display: block;
+    }
+    
+    .top-right-contact .click {
+        font-size: 2.3rem;
+        padding-inline: 0.5rem;
+        max-width: 8rem;
+        max-height: 8rem;
+        height: 8rem;
+        text-align: center;
+        line-height: 8rem;
+    }
+    
+    .top-right-contact .short {
+        display: block;
+    }
+
+    .top-right-contact .long {
+        display: none;
+    }
+
+    .top-right-contact a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 8rem;
+        max-width: 8rem;
+        height: 8rem;
+        max-height: 8rem;
+    }
+    
+    .top-right-contact a:hover {
+        width: 8rem;
+        max-width: 8rem;
+        height: 8rem;
+        max-height: 8rem;
+    }
+
+    .greet h1 {
+        font-size: 4rem;
+    }
+
+    .hero {
+        padding-inline: 0rem;
+    }
+
+    .hero h2 {
+        font-size: 6.5rem;
+    }
+
+    .example h3 {
+        font-size: 4.5rem;
+    }
+    
+    .example .img-container img {
+        height: 50rem;
+    }
+    
+    .customers h3 {
+        font-size: 5rem;
+    }
+    
+    .ctm-lists .ctm-row {
+        flex-direction: column;
+    }
+
+    .ctm-row a p {
+        font-size: 3rem;
+        text-align: center;
+        width: 60rem;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        font-size: 28%;
+    }
+}
+
+@media (max-width: 320px) {
+    :root {
+        font-size: 24%;
+    }
+}

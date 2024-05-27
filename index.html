@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="เหรียญรางวัล สำเร็จรูป พลาสติก พร้อมส่ง ส่งไว ราคาถูก">
+    <meta name="description" content="เหรียญรางวัลพลาสติกสำเร็จรูป มีทั้งแบบกลม แบบเหลี่ยม แบบเรียบ และแบบโมเดิร์น พร้อมส่งอย่างรวดเร็ว สต๊อกมีจุก ๆ ทุกวัน ยืนยันมาตราฐานด้วยประวัติยาวนานกว่า 20 ปี">
+    
+    <title>READYMEDALS</title>
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="Pridi-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="top-right-contact">
+        <div class="click long">
+            พร้อมส่งมาก สั่งซื้อได้เลยเพียงติดต่อมาที่นี่
+        </div>
+        <div class="click short">
+            ซื้อเลย
+        </div>
+        <a class="tele" href="">
+            <img src="picture/tele-icon.webp" alt="contact telephone">
+        </a>
+        <a class="mail" href="">
+            <img src="picture/mail-icon.webp" alt="contact email">
+        </a>
+        <a class="line" href="">
+            <img src="picture/line-icon.webp" alt="contact lime">
+        </a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="picture/readymedals_logo.webp" alt="logo">
+        </div>
+        <!-- <h2>
+           - READYMEDALS - 
+        </h2> -->
+    </header>
+
+    <section class="greet">
+        <h1>
+            เหรียญรางวัล พลาสติก พร้อมสายคล้องคอ
+        </h1>
+        <div class="greet-line">
+            <div class="minicircle gold"></div>
+            <h2>มีแบบ ทรงกลม ทรงหยดน้ำ ทรงกลมแปะโลโก้
+                <br> และทรงกลมรูปถ้วยรางวัล</h2>
+        </div>
+        <div class="greet-line">
+            <div class="minicircle silver"></div>
+            <h2>สินค้าพร้อมส่งภายใน 1-2 วัน</h2>
+        </div>
+        <div class="greet-line">
+            <div class="minicircle bronze"></div>
+            <h2>จัดส่งถึงทั่วประเทศภายใน 3-5 วัน</h2>
+        </div>
+        <div class="greet-line">
+            <div class="minicircle gray"></div>
+            <h2>ไว้ใจได้ด้วยประวัติการขายมายาวนานกว่า 20 ปี
+            </h2>
+        </div>
+        <div class="greet-line">
+            <div class="minicircle gray"></div>
+            <h2>มีเอกสารบริษัทครบถ้วน สามารถออกเอกสาร <br>ที่ใช้ในการเบิกจ่ายหน่วยงานได้
+            </h2>
+        </div>
+    </section>
+
+    <div class="click-hint">
+        <img src="picture/blank.webp" alt="click for more information" class="more-info rotate">
+        <p>สามารถคลิกที่รูปเพื่อดูรายละเอียดเพิ่มเติมได้</p>
+        <img src="picture/blank.webp" alt="click for more information" class="more-info rotate">
+    </div>
+    <section class="hero">
+        <div class="medal modern">
+            <h2>
+                ทรงกลม ถ้วยรางวัล
+            </h2>
+            <img src="picture/กลมถ้วยสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า" class="pic one" onclick="showModernMedal()">
+            <img src="picture/กลมถ้วยสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม ทันสมัย แปะโลโก้ได้ ด้านหลัง" class="pic two" onclick="showModernMedal()">
+        </div>
+
+        <div class="medal flat">
+            <h2>
+                ทรงกลม หน้าเรียบ
+            </h2>
+            <img src="picture/กลมเรียบสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม เรียบ แปะโลโก้ได้ ด้านหน้า" class="pic one" onclick="showFlatMedal()">
+            <img src="picture/กลมเรียบสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม เรียบ แปะโลโก้ได้ ด้านหลัง" class="pic two" onclick="showFlatMedal()">
+        </div>
+
+        <div class="medal circle">
+            <h2>
+                ทรงกลม มาตราฐาน
+            </h2>
+            <img src="picture/กลมสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า" class="pic one" onclick="showCircleMedal()">
+            <img src="picture/กลมสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง" class="pic two" onclick="showCircleMedal()">
+        </div>
+        <div class="medal square">
+            <h2>
+                ทรงหยดน้ำ มาตราฐาน
+            </h2>
+            <img src="picture/หยดน้ำสามสีด้านหน้า.webp" alt="เหรียญรางวัล หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า" class="pic one" onclick="showSquareMedal()">
+            <img src="picture/หยดน้ำสามสีด้านหลัง.webp" alt="เหรียญรางวัล หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง" class="pic two" onclick="showSquareMedal()">
+        </div>
+    </section>
+
+    <section class="hidden-info" id="modern">
+        <div class="content">
+            <h3>เหรียญรางวัล ทรงกลม รูปถ้วยรางวัล</h3>
+            <div class="first-box">
+                <div class="pic-container">
+                    <img src="picture/กลมถ้วยสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมถ้วยสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมถ้วยทองด้านหนัา.webp" alt="เหรียญรางวัล เหรียญทอง กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมถ้วยทองด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทอง กลม ทันสมัย แปะโลโก้ได้ ด้านหลัง">
+                    <img src="picture/กลมถ้วยเงินด้านหนัา.webp" alt="เหรียญรางวัล เหรียญเงิน กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมถ้วยเงินด้านหลัง.webp" alt="เหรียญรางวัล เหรียญเงิน กลม ทันสมัย แปะโลโก้ได้ ด้านหลัง">
+                    <img src="picture/กลมถ้วยทองแดงด้านหนัา.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม ทันสมัย แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมถ้วยทองแดงด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม ทันสมัย แปะโลโก้ได้ ด้านหลัง">
+                </div>
+                <p>
+                    <span>รายละเอียด</span>
+                    <br>
+                    เหมาะสำหรับผู้ที่ต้องการเหรียญรางวัลที่คุ้มค่า สวยงาม ทันสมัย มีรูปแบบเฉพาะเป็นของตนเอง โดยสามารถติดโลโก้ของตนเองลงบนเหรียญได้
+                    <br>
+                    <br>
+                    - เหรียญสามารถใช้งานได้ 2 ด้าน ด้านหลังสามารถแปะสติกเกอร์โลโก้ได้
+                    <br>
+                    - เหรียญขนาดเส้นผ่านศูนย์กลาง 6.3 ซม.
+                    <br>
+                    - ด้านหลังสามารถติดสติกเกอร์โลโก้ขนาดเส้นผ่านศูนย์กลาง 3.5 ซม. ได้พอดี
+                    <br>
+                    - เหรียญพร้อมสายคล้องคอ กว้าง 2.3 ซม. ยาว 70 ซม. (คล้องคอแล้วยาว 35 ซม.)
+                    <br>
+                    - น้ำหนักเบา เหมาะกับงานกีฬาสี งานแข่งกีฬาประจำปีของโรงเรียน บริษัท องค์กรต่างๆ
+                    <br>
+                    - ราคาเหมาะสม
+                    <br>
+                    - สามารถสั่งผลิตสติกเกอร์โลโก้ได้ (มีค่าใช้จ่ายเพิ่มเติมขึ้นกับรูปแบบและจำนวน)
+                </p>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <div class="close" onclick="closeInfo(this)">ปิด</div>
+    </section>
+
+    <section class="hidden-info" id="flat">
+        <div class="content">
+            <h3>เหรียญรางวัล ทรงกลม แปะโลโก้</h3>
+            <div class="first-box">
+                <div class="pic-container">
+                    <img src="picture/กลมเรียบสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม เรียบ แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมเรียบสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม เรียบ แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมเรียบทองด้านหน้า.webp" alt="เหรียญรางวัล เหรียญทอง กลม เรียบ แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมเรียบทองด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทอง กลม เรียบ แปะโลโก้ได้ ด้านหลัง">
+                    <img src="picture/กลมเรียบเงินด้านหน้า.webp" alt="เหรียญรางวัล เหรียญเงิน กลม เรียบ แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมเรียบเงินด้านหลัง.webp" alt="เหรียญรางวัล เหรียญเงิน กลม เรียบ แปะโลโก้ได้ ด้านหลัง">
+                    <img src="picture/กลมเรียบทองแดงด้านหน้า.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม เรียบ แปะโลโก้ได้ ด้านหน้า">
+                    <img src="picture/กลมเรียบทองแดงด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม เรียบ แปะโลโก้ได้ ด้านหลัง">
+                </div>
+                <p>
+                    <span>รายละเอียด</span>
+                    <br>
+                    เหมาะสำหรับผู้ที่ต้องการเหรียญรางวัลที่มีรูปแบบเฉพาะเป็นของตนเอง โดยสามารถติดโลโก้ของตนเองลงบนเหรียญได้ 
+                    <br>
+                    <br>
+                    - เหรียญสามารถแปะสติกเกอร์โลโก้ได้
+                    <br>
+                    - เหรียญขนาดเส้นผ่านศูนย์กลาง 6 ซม.
+                    สามารถติดสติกเกอร์โลโก้ขนาดเส้นผ่านศูนย์กลาง 3.7 ซม. ได้พอดี
+                    <br>
+                    - เหรียญพร้อมสายคล้องคอลายธงชาติ กว้าง 1.4 ซม. ยาว 70 ซม. (คล้องคอแล้วยาว 35 ซม.)
+                    <br>
+                    - น้ำหนักเบา เหมาะกับงานกีฬาสี งานแข่งกีฬาประจำปีของโรงเรียน บริษัท องค์กรต่างๆ
+                    <br>
+                    - ราคาเหมาะสม
+                    <br>
+                    - สามารถสั่งผลิตสติกเกอร์โลโก้ได้ (มีค่าใช้จ่ายเพิ่มเติมขึ้นกับรูปแบบและจำนวน)
+                </p>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <div class="close" onclick="closeInfo(this)">ปิด</div>
+    </section>
+
+    <section class="hidden-info" id="circle">
+        <div class="content">
+            <h3>เหรียญรางวัลทรงกลม</h3>
+            <div class="first-box">
+                <div class="pic-container">
+                    <img src="picture/กลมสามสีด้านหน้า.webp" alt="เหรียญรางวัล กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/กลมสามสีด้านหลัง.webp" alt="เหรียญรางวัล กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/กลมทองด้านหนัา.webp" alt="เหรียญรางวัล เหรียญทอง กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/กลมทองด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทอง กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                    <img src="picture/กลมเงินด้านหนัา.webp" alt="เหรียญรางวัล เหรียญเงิน กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/กลมเงินด้านหลัง.webp" alt="เหรียญรางวัล เหรียญเงิน กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                    <img src="picture/กลมทองแดงด้านหนัา.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/กลมทองแดงด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทองแดง กลม มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                </div>
+                <p>
+                    <span>รายละเอียด</span>
+                    <br>
+                    เหมาะสำหรับผู้ที่มีความต้องการรูปแบบมาตราฐานของการกีฬาแห่งประเทศไทย ใช้งานง่ายสะดวกรวดเร็ว
+                    <br>
+                    <br>
+                    - บริเวณกลางเหรียญเป็นรูปพระอินทร์ทรงช้างเอราวัณ (ช้างสามเศียร) ตราสัญลักษณ์ของการกีฬาแห่งประเทศไทย
+                    <br>
+                    - เหรียญส่วนบน เขียนคำว่า การแข่งขันกีฬาประจำปี 
+                    <br>
+                    - เหรียญส่วนล่าง เขียนคำว่า รู้แพ้ รู้ชนะ รู้อภัย
+                    <br> 
+                    - เหรียญขนาดเส้นผ่านศูนย์กลาง 6 ซม.
+                    ด้านหลังสามารถติดสติกเกอร์โลโก้ขนาดเส้นผ่านศูนย์กลาง 3.5 ซม. ได้พอดี
+                    <br>
+                    - เหรียญพร้อมสายคล้องคอลายธงชาติ กว้าง 2.3 ซม. ยาว 70 ซม. (คล้องคอแล้วยาว 35 ซม.)
+                    <br>
+                    - น้ำหนักเบา เหมาะกับงานกีฬาสี 
+                    งานแข่งกีฬาประจำปีของโรงเรียน บริษัท องค์กรต่างๆ
+                    <br>
+                    - ราคาเหมาะสม
+                </p>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <div class="close" onclick="closeInfo(this)">ปิด</div>
+    </section>
+
+    <section class="hidden-info" id="square">
+        <div class="content">
+            <h3>เหรียญรางวัลทรงหยดน้ำ</h3>
+            <div class="first-box">
+                <div class="pic-container">
+                    <img src="picture/หยดน้ำสามสีด้านหน้า.webp" alt="เหรียญรางวัล หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/หยดน้ำสามสีด้านหลัง.webp" alt="เหรียญรางวัล หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/หยดน้ำทองด้านหน้า.webp" alt="เหรียญรางวัล เหรียญทอง หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/หยดน้ำทองด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทอง หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                    <img src="picture/หยดน้ำเงินด้านหน้า.webp" alt="เหรียญรางวัล เหรียญเงิน หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/หยดน้ำเงินด้านหลัง.webp" alt="เหรียญรางวัล เหรียญเงิน หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                    <img src="picture/หยดน้ำทอแดงงด้านหน้า.webp" alt="เหรียญรางวัล เหรียญทองแดง หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหน้า">
+                    <img src="picture/หยดน้ำทอแดงงด้านหลัง.webp" alt="เหรียญรางวัล เหรียญทองแดง หยดน้ำ มาตราฐาน การกีฬาแห่งประเทศไทย ด้านหลัง">
+                </div>
+                <p>
+                    <span>รายละเอียด</span>
+                    <br>
+                    เหมาะสำหรับผู้ที่มีความต้องการรูปแบบมาตราฐานของการกีฬาแห่งประเทศไทย ใช้งานง่ายสะดวกรวดเร็ว
+                    <br>
+                    <br>
+                    - บริเวณกลางเหรียญเป็นรูปพระอินทร์ทรงช้างเอราวัณ (ช้างสามเศียร) ตราสัญลักษณ์ของการกีฬาแห่งประเทศไทย
+                    <br>
+                    - เหรียญส่วนบน เขียนคำว่า การแข่งขันกีฬาประจำปี 
+                    <br>
+                    - เหรียญส่วนล่าง เขียนคำว่า รู้แพ้ รู้ชนะ รู้อภัย 
+                    <br>
+                    - เหรียญขนาดเส้นผ่านศูนย์กลาง 6 ซม.
+                    ด้านหลังสามารถติดสติกเกอร์โลโก้ขนาดเส้นผ่านศูนย์กลาง 3.5 ซม. ได้พอดี
+                    <br>
+                    - เหรียญพร้อมสายคล้องคอลายธงชาติ กว้าง 2.3 ซม. ยาว 70 ซม. (คล้องคอแล้วยาว 35 ซม.)
+                    <br>
+                    - น้ำหนักเบา เหมาะกับงานกีฬาสี งานแข่งกีฬาประจำปีของโรงเรียน บริษัท องค์กรต่างๆ
+                    <br>
+                    - ราคาเหมาะสม
+                </p>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <div class="close" onclick="closeInfo(this)">ปิด</div>
+    </section>
+
+    <section class="example">
+        <h3>ตัวอย่างสินค้าที่ใช้งานจริง</h3>
+        <div class="top img-container">
+            <div class="auto-scroller">
+                <img src="picture/001.webp" alt="example 1">
+                <img src="picture/002.webp" alt="example 2">
+                <img src="picture/003.webp" alt="example 3">
+                <img src="picture/004.webp" alt="example 4">
+                <img src="picture/005.webp" alt="example 5">
+                <img src="picture/001.webp" alt="example 1">
+                <img src="picture/002.webp" alt="example 2">
+                <img src="picture/003.webp" alt="example 3">
+                <img src="picture/004.webp" alt="example 4">
+                <img src="picture/005.webp" alt="example 5">
+            </div>
+        </div>
+        <div class="mid img-container">
+            <div class="reverse-scroller">
+                <img src="picture/th-11134103-22070-ua0tdswiunevd8.webp" alt="example 6">
+                <img src="picture/th-11134103-23020-43qzwppcjrnv00.webp" alt="example 7">
+                <img src="picture/th-11134103-23020-rxy13opcjrnv1f.webp" alt="example 8">
+                <img src="picture/th-11134103-7r98o-lkkkxdaw4sbea9.webp" alt="example 9">
+                <img src="picture/th-11134103-7r98o-lkkkxdaw4sf269.webp" alt="example 10">
+                <img src="picture/th-11134103-22070-ua0tdswiunevd8.webp" alt="example 6">
+                <img src="picture/th-11134103-23020-43qzwppcjrnv00.webp" alt="example 7">
+                <img src="picture/th-11134103-23020-rxy13opcjrnv1f.webp" alt="example 8">
+                <img src="picture/th-11134103-7r98o-lkkkxdaw4sbea9.webp" alt="example 9">
+                <img src="picture/th-11134103-7r98o-lkkkxdaw4sf269.webp" alt="example 10">
+            </div>
+        </div>
+        <div class="bottom img-container">
+            <div class="auto-scroller">
+                <img src="picture/th-11134103-7r98v-lpjaybqpenn6c4.webp" alt="example 11">
+                <img src="picture/th-11134103-7r98y-lntzi7s5uvjk19.webp" alt="example 12">
+                <img src="picture/th-11134103-7r98z-lnyr0n5ovaefd9.webp" alt="example 13">
+                <img src="picture/th-11134103-7r98z-lp96sh3fvqf2de.webp" alt="example 14">
+                <img src="picture/th-11134103-7r98z-lpgjrbf4216m72.webp" alt="example 15">
+                <img src="picture/th-11134103-7r98v-lpjaybqpenn6c4.webp" alt="example 11">
+                <img src="picture/th-11134103-7r98y-lntzi7s5uvjk19.webp" alt="example 12">
+                <img src="picture/th-11134103-7r98z-lnyr0n5ovaefd9.webp" alt="example 13">
+                <img src="picture/th-11134103-7r98z-lp96sh3fvqf2de.webp" alt="example 14">
+                <img src="picture/th-11134103-7r98z-lpgjrbf4216m72.webp" alt="example 15">
+            </div>
+        </div>
+    </section>
+
+    <section class="customers">
+        <h3>รายชื่อลูกค้าที่ใช้เหรียญของเรา</h3>
+        <div class="ctm-lists">
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://absj.ac.th/index.php"><img src="picture/โรงเรียนอนุบาลสกุลจิตร.webp" alt="โรงเรียนอนุบาลสกุลจิตร แผนกประถม"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://absj.ac.th/index.php"><p>โรงเรียนอนุบาลสกุลจิตร แผนกประถม</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.siri.ac.th/home.html"><img src="picture/โรงเรียนศิริมงคลศึกษา.webp" alt="โรงเรียนศิริมงคลศึกษา"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.siri.ac.th/home.html"><p>โรงเรียนศิริมงคลศึกษา</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="http://prainsuksa.ac.th/mainpage"><img src="picture/โรงเรียนพระอินทร์ศึกษา(กล่อมสกุลอุทิศ).webp" alt="โรงเรียนพระอินทร์ศึกษา (กล่อมสกุลอุทิศ)"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://prainsuksa.ac.th/mainpage"><p>โรงเรียนพระอินทร์ศึกษา (กล่อมสกุลอุทิศ)</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://satit.bru.ac.th/"><img src="picture/โรงเรียนสาธิตมหาวิทยาลัยราชภัฏบุรีรัมย์.webp" alt="โรงเรียนสาธิตมหาวิทยาลัยราชภัฏบุรีรัมย์"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://satit.bru.ac.th/"><p>โรงเรียนสาธิตมหาวิทยาลัยราชภัฏบุรีรัมย์</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.thanombutra.com/"><img src="picture/โรงเรียนถนอมบุตร.webp" alt="โรงเรียนถนอมบุตร"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.thanombutra.com/"><p>โรงเรียนถนอมบุตร</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://banwangdinsor.ac.th/mainpage"><img src="picture/โรงเรียนบ้านวังดินสอ.webp" alt="โรงเรียนบ้านวังดินสอ"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://banwangdinsor.ac.th/mainpage"><p>โรงเรียนบ้านวังดินสอ</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mareerukchiangrai.net/"><img src="picture/โรงเรียนมารีย์รักษ์เชียงราย.webp" alt="โรงเรียนมารีย์รักษ์เชียงราย"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.mareerukchiangrai.net/"><p>โรงเรียนมารีย์รักษ์เชียงราย</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.baanmaechan.ac.th/"><img src="picture/โรงเรียนบ้านแม่จันฯ.webp" alt="โรงเรียนบ้านแม่จันฯ"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.baanmaechan.ac.th/"><p>โรงเรียนบ้านแม่จันฯ</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="http://phalanukul.ac.th/mainpage"><img src="picture/โรงเรียนพระพุทธบาท พลานุกูลวิทยา.webp" alt="โรงเรียนพระพุทธบาท พลานุกูลวิทยา"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://phalanukul.ac.th/mainpage"><p>โรงเรียนพระพุทธบาท พลานุกูลวิทยา</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.watbangtoei.ac.th/"><img src="picture/โรงเรียนวัดบางเตย.webp" alt="โรงเรียนวัดบางเตย"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.watbangtoei.ac.th/"><p>โรงเรียนวัดบางเตย</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://webportal.bangkok.go.th/klongnongyai"><img src="picture/โรงเรียนคลองหนองใหญ่.webp" alt="โรงเรียนคลองหนองใหญ่"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://webportal.bangkok.go.th/klongnongyai"><p>โรงเรียนคลองหนองใหญ่</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.jirada.ac.th/mainpage"><img src="picture/โรงเรียนจิรดา.webp" alt="โรงเรียนจิรดา"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.jirada.ac.th/mainpage"><p>โรงเรียนจิรดา</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="http://banphudin.com/mainpage"><img src="picture/โรงเรียนบ้านภูดิน(มิตรผลอุปถัมภ์).webp" alt="โรงเรียนบ้านภูดิน(มิตรผลอุปถัมภ์)"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://banphudin.com/mainpage"><p>โรงเรียนบ้านภูดิน(มิตรผลอุปถัมภ์)</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mtp-school.com/"><img src="picture/โรงเรียนมัธยมศึกษาเทศบาลปทุมธานี.webp" alt="โรงเรียนมัธยมศึกษาเทศบาลปทุมธานี"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mtp-school.com/"><p>โรงเรียนมัธยมศึกษาเทศบาลปทุมธานี</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="http://chw.ac.th/mainpage"><img src="picture/โรงเรียนเชิงทะเลวิทยาคม จุติ-ก้อง อนุสรณ์.webp" alt="โรงเรียนเชิงทะเลวิทยาคม 'จุติ-ก้อง อนุสรณ์'"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://chw.ac.th/mainpage"><p>โรงเรียนเชิงทะเลวิทยาคม "จุติ-ก้อง อนุสรณ์"</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.tpt.ac.th/wp/"><img src="picture/โรงเรียนทวีธาภิเศก บางขุนเทียน.webp" alt="โรงเรียนทวีธาภิเศก บางขุนเทียน"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.tpt.ac.th/wp/"><p>โรงเรียนทวีธาภิเศก บางขุนเทียน</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.rajinirws.ac.th/"><img src="picture/โรงเรียนราชินีวิพัฒน์.webp" alt="โรงเรียนราชินีวิพัฒน์"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.rajinirws.ac.th/"><p>โรงเรียนราชินีวิพัฒน์</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.watthepkrasattrischool.ac.th/mainpage"><img src="picture/โรงเรียนวัดเทพกระษัตรี.webp" alt="โรงเรียนวัดเทพกระษัตรี"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.watthepkrasattrischool.ac.th/mainpage"><p>โรงเรียนวัดเทพกระษัตรี</p></a>
+            </div>
+            <div class="ctm-row">
+                <a target="_blank" rel="noopener noreferrer" href="http://www.bmschool.ac.th/mainpage"><img src="picture/โรงเรียนบ้านห้วยม่วง.webp" alt="โรงเรียนบ้านห้วยม่วง"></a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.bmschool.ac.th/mainpage"><p>โรงเรียนบ้านห้วยม่วง</p></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mrws.ac.th/2021/"><img src="picture/โรงเรียนเมืองราดวิทยาคม.webp" alt="โรงเรียนเมืองราดวิทยาคม"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mrws.ac.th/2021/"><p>โรงเรียนเมืองราดวิทยาคม</p></a>
+            </div>
+            <h3>และอื่น ๆ อีกมากมาย</h3>
+        </div>
+    </section>
+
+    <div class="margin-foot"></div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="information">
+                <div class="logo">
+                    <img src="picture/readymedals_logo.webp" alt="logo">
+                </div>
+                <div class="address">
+                    <p>
+                        <span>ที่อยู่บริษัท</span>
+                        <br>
+                        212/224 ซอยเพชรเกษม 16
+                        <br>
+                        ถนนเพชรเกษม วัดท่าพระ บางกอกใหญ่  
+                        <br>
+                        กรุงเทพฯ 10600
+                    </p>
+                </div>
+                <div class="contact">
+                    <a href="">
+                        <img src="picture/tele-icon.webp" alt="tele icon">
+                        099-999-9999
+                    </a>
+                    <br>
+                    <a href="">
+                        <img src="picture/mail-icon.webp" alt="mail icon">
+                        readymedals@email.me
+                    </a>
+                    <br>
+                    <a target="_blank" rel="noopener noreferrer" href="">
+                        <img src="picture/line-icon.webp" alt="line icon">
+                        @readymedals
+                    </a>
+                </div>
+            </div>
+            <div class="credit">
+                <p>READYMEDALS © Copyright 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
